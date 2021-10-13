@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,16 +29,21 @@ class _MyHomePageState extends State<MyHomePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              width: size.width * 0.5,
-              height: 150.0,
-              color: Colors.orangeAccent,
-              child: Text("Прива)"),
-            )
-          ],
+        child: Container(
+          width: size.width,
+          height: size.height,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                width: size.width * 1,
+                height: size.height * 0.9666,
+                color: Colors.orangeAccent,
+                child: Text("Пива)"),
+              )
+            ],
+          ),
         )
       )
     );
