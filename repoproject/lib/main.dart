@@ -26,7 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("kuyguikgkihgkhghg"),
+      body: Text("Скаффолд волк"),
     );
   }
 }
