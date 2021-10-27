@@ -18,16 +18,66 @@ class _TimeLinePageState extends State<TimeLinePage> {
         body: PageView(
           controller: controller,
           physics: BouncingScrollPhysics(),
-          scrollDirection: Axis.vertical,
+          scrollDirection: Axis.horizontal,
           children: [
             Container(
+              color: Colors.pink,
               width: size.width,
               height: size.height,
+              child: Center(
+                child: Text(
+                  "чичивара",
+                  style: TextStyle(
+                    fontSize: 35.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w900
+                  )
+                ),
+              ),
             ),
             Container(
+              color: Colors.orangeAccent,
               width: size.width,
-              height: size.height
+              height: size.height,
+              child: Center(
+                child: Text(
+                  "чикивинь",
+                  style: TextStyle(
+                    fontSize: 35.0,
+                    color: Colors.red,
+                    fontWeight: FontWeight.w100
+                  ),
+                ),
+              ),
             ),
+            Container(
+              color: Colors.teal,
+              width: size.width,
+              height: size.height,
+              child: Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                  Text(
+                  "Иван",
+                  style: TextStyle(
+                    fontSize: 35.0,
+                    color: Colors.pinkAccent,
+                    fontWeight: FontWeight.w300
+                  ), 
+                  ),
+                    Text(
+                     "Гамаз",
+                      style: TextStyle(
+                       fontSize: 35.0,
+                       color: Colors.white,
+                       fontWeight: FontWeight.w500
+                      ), 
+                    ),
+                  ],
+                ),
+              )
+            )
           ],
         ),
       ),
